@@ -12,11 +12,11 @@ function Feed() {
     useEffect(() =>{
         fetchFromApi(`/search?part=snippet,id&q=${selectedCategory}`).then((data) => {
             setVideos(data.items);
-            // console.log(data.items);
+           console.log(data.items);
 
         })
     },[selectedCategory]);
-    
+    console.log("dfsfff");
     return ( 
 
     
