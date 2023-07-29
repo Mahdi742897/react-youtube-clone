@@ -31,9 +31,9 @@ function Feed() {
                 selectedCategory=  {selectedCategory}
                 setSelectedCategory = {setSelectedCategory}
             />
-            <Typography className="copyright" variant ='body2' sx ={{color: '#fff', mt: 1.5}}>
+            {/* <Typography className="copyright" variant ='body2' sx ={{color: '#fff', mt: 1.5}}>
                 CopyRight 2023 MahdiFeyzi
-            </Typography>
+            </Typography> */}
 
             </Box>
 
