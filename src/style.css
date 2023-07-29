@@ -59,6 +59,7 @@
   @media screen and (max-width: 900px){
     .search-bar {
         width: 200px !important;
+        padding: 0 !important;
     }
     }
   @media screen and (max-width: 900px){

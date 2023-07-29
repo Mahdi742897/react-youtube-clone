@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Await, Link, useParams } from "react-router-dom";
 import { Box, Typography, Stack } from "@mui/material";
 import { CheckCircle, Subtitles } from "@mui/icons-material";
 import ReactPlayer from "react-player";
@@ -22,14 +22,10 @@ function VideoDetail() {
     );
   }, [id]);
 
-  // useEffect(() => {
-  //   fetchFromApi(`/search?part=snippet,id&relatedToVideoId=${id}`).then((data) =>
-  //     setRelatedVideos(data.items)
-  //   );
-  // }, [id]);
-
-  if (!videoDetail?.snippet) return "Loading...";
-
+  console.log(videoDetail);
+  if (!videoDetail?.snippet) {
+    return " Loading... ";
+  }
   // Object destructuring
 
   const {
@@ -37,11 +33,10 @@ function VideoDetail() {
     statistics: { viewCount, likeCount },
   } = videoDetail;
 
-  console.log(videoDetail);
   return (
     <Box minHeight="100vh">
       <Stack direction={{ xs: "column", md: "row" }}>
-        <Box flex={2}>
+        <Box flex={3}>
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
@@ -84,7 +79,9 @@ function VideoDetail() {
             </Stack>
           </Box>
         </Box>
-        <Box flex={1} p="30px">
+        <Box flex={1} sx={{
+          paddingLeft:{md:'20px'
+          }}}>
           <Videos videos={relatedVideos} />
         </Box>
       </Stack>

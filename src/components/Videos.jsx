@@ -5,6 +5,10 @@ import {VideoCard, ChannelCard} from "./";
 function Videos({videos}){
 
     
+  if (!videos) {
+    return <div>Loading...</div>;
+  }
+    
     return(
         <Stack direction="row" flexWrap="wrap" 
         justifyContent="center" sx={{height: "100%"}}>

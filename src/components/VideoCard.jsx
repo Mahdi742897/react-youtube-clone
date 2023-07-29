@@ -6,11 +6,10 @@ import { demoThumbnailUrl, demoVideoUrl, demoChannelTitle,
         demoChannelUrl, demoVideoTitle } from "../utils/constants";
 
 function VideoCard({videos : {id : {videoId}, snippet},videos}) {
-  // console.log(videos);
   return (
     
     <Card sx = {{ width:"320px" , justifyContent: "center",borderRadius : "none",margin: "0 12px 12px 0"  }}>
-        <Link to ={videoId ? `/video/${videoId}` : demoVideoUrl}>
+        <Link to ={videoId ? `/react-youtube-clone/video/${videoId}` : demoVideoUrl}>
           <CardMedia 
           image={snippet?.thumbnails?.high?.url} 
           alt = {snippet?.title}

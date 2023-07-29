@@ -12,7 +12,7 @@ export default function App(){
        
         <Routes>
             <Route path="/react-youtube-clone" exact element = {<Feed />} />
-            <Route path="/video/:id" element = {<VideoDetail/>} />
+            <Route path="/react-youtube-clone/video/:id" element = {<VideoDetail/>} />
             <Route path="/channel/:id" element = {<ChannelDetail/>} />
             <Route path="/search/:searchTerm" element = {<SearchFeed/>} />
             

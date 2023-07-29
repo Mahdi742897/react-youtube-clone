@@ -16,7 +16,7 @@ function Feed() {
 
         })
     },[selectedCategory]);
-    console.log("dfsfff");
+    
     return ( 
 
     
