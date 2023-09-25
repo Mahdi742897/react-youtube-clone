@@ -14,6 +14,9 @@ function SideBar({selectedCategory, setSelectedCategory}) {
         overflowY: "auto",
         haight: { xs: "auto", md: "100%" },
         gap: {xs:"20px",sm:"0px"},
+        mb:{sm:'15px'}
+        
+
        
         
         

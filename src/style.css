@@ -61,8 +61,6 @@
         width: 200px !important;
         padding: 0 !important;
     }
-    }
-  @media screen and (max-width: 900px){
     .category-btn{
         
         display: flex !important;
@@ -75,4 +73,9 @@
        
         
     }
+    /* .search-icon{
+       width: 20px !important;
+        
+    } */
     }
+  

@@ -58,19 +58,20 @@ function SearchBar() {
       />
 
       <IconButton
+      
       onClick={handleSubmit}
+      className="search-icon"
         color="error"
         type="submit"
         sx={{
           padding: "10px",
-          // top: "20px",
           position:'absolute',
-          // top:0,
-          right:0
+          right:0,
+          
           
         }}
       >
-        <Search sx={{fontSize:'30px'}}/>
+        <Search sx={{fontSize:{md:'30px', sm:'20px'}}}/>
       </IconButton>
     </Box>
   
