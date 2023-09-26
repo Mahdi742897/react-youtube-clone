@@ -15,7 +15,7 @@ function ChannelCard({ channelDetail,marginTop }) {
         justifyContent: "center",
         alignItems: "center",
         // width: {xs: "356px", md: "320px"},
-        width: "20rem",
+        width: "394px",
         margin: "0 12px 12px 0",
         marginTop: {marginTop},
         zIndex: "20"

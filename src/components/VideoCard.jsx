@@ -8,12 +8,12 @@ import { demoThumbnailUrl, demoVideoUrl, demoChannelTitle,
 function VideoCard({videos : {id : {videoId}, snippet},videos}) {
   return (
     
-    <Card sx = {{ width:"394px" , justifyContent: "center",borderStartStartRadius : "14px",borderStartEndRadius:'14px',margin: "0 12px 12px 0" ,border:'none',backgroundColor:'black' }}>
+    <Card sx = {{ width:"394px" , justifyContent: "center",borderStartStartRadius : "14px",borderStartEndRadius:'14px',margin: "12px 7px 30px 7px" ,border:'none',backgroundColor:'black' }}>
         <Link to ={videoId ? `/react-youtube-clone/video/${videoId}` : demoVideoUrl}>
           <CardMedia 
           image={snippet?.thumbnails?.high?.url} style={{objectFit:'cover'}}  
           alt = {snippet?.title}
-          sx=  {{width: 394, height: 200,borderRadius:'14px'}}
+          sx=  {{width: 394, height: 220,borderRadius:'14px'}}
           />
         </Link>
         <CardContent sx= {{backgroundColor:'black', height: "106px"}}>

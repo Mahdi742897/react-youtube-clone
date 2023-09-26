@@ -43,6 +43,7 @@ function VideoDetail() {
               controls
               height="70vh"
               width="100%"
+              
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
               {title}
@@ -80,8 +81,7 @@ function VideoDetail() {
           </Box>
         </Box>
         <Box flex={1} sx={{
-          paddingLeft:{md:'20px'
-          }}}>
+          paddingLeft:{md:'70px'},paddingRight:{md:'10px'}}}>
           <Videos videos={relatedVideos} />
         </Box>
       </Stack>
